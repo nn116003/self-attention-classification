@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  self_attention_classifier:
+    build: "./docker"
+    container_name: "self_attention_classifier"
+    volumes:
+      - "./classifier:/work"
+    working_dir: /work
+    tty: True
